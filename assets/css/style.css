@@ -51,7 +51,11 @@ padding: 2%;
     padding-right: 10px;
     color: black;
     border-right: 4px solid black;
-    width: 150px;
+    flex: 0 0 20%;
+}
+
+.card-box {
+    flex: 0 0 70%;
 }
 
 .contact-info{
