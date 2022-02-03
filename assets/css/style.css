@@ -25,7 +25,15 @@ header {
     align-items: center;
     background-color: var(--midnight-blue);
 }
+.avatar {
+    vertical-align: middle;
+    display: inline;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
 #myName {
+    display: inline;
     margin: 2%;
     font-size: 200%;
     font-family: 'Times New Roman', Times, serif;
@@ -58,9 +66,48 @@ padding: 2%;
     flex: 0 0 70%;
 }
 
+/* images for work section */
+#comming-soon {
+    max-width: 900px;
+    width: 100%;
+    position: relative;
+}
+
+
+.lower-imgs {
+    display: flex;
+    max-width: 300px;
+    width: 100%;
+    flex: 50%;
+    padding: 0 4px;
+    border-radius: 0vh;
+
+}
+
+
+/* image captions */
+
+.images-text {
+    position: relative;
+    text-align: center;
+    flex-basis: 300px;
+    
+      
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    background-color: turquoise;
+}
+
+
+/* contact me section */
 .contact-info{
    color: black;
    align-items: center;    
+   padding: 10px 10px 10px 10px;
 }
 
 
@@ -82,6 +129,7 @@ body {
 
 }
 
+
 a[href$='0']::before {
     content: 'Phone📱:';
     display: inline-block;
@@ -97,21 +145,25 @@ a[href$='com']::before {
 .card-column{
     padding-bottom: 2%;
     display: flex;
+    flex-direction: row;
+    
 }
+
+
+
 
 figure {
     margin-left: 5%;
         
 }
 
-#comming-soon:hover{
--ms-transform: scale(1.5);
--webkit-transform: scale(1.5);
-transform: scale(1.5);
+.card-info iframe {
+    width: 100%;
+    height: 600px;
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
     header,main{
       flex-direction: column;
     }
