@@ -10,9 +10,11 @@
   }
 
 html {
-   
+    height: 100%;
+    width: 100%;
     font-size: 62.5%;
 }
+
 
 main {
     width: 98%;
@@ -74,11 +76,9 @@ padding: 2%;
 }
 
 
-.lower-imgs {
-    display: flex;
+.lowerImgs {
     max-width: 300px;
     width: 100%;
-    flex: 50%;
     padding: 0 4px;
     border-radius: 0vh;
 
@@ -126,6 +126,8 @@ body {
     flex-direction: column;
     line-height: 1.3;
     font-size: 20px;
+    height: 100%;
+    width: 100%;
 
 }
 
@@ -152,15 +154,24 @@ a[href$='com']::before {
 
 
 
-figure {
+#portWork {
+    flex-wrap: wrap;
     margin-left: 5%;
+    display: flex;
         
 }
-
-.card-info iframe {
-    width: 100%;
-    height: 600px;
+#proOne {
+    flex: 0 0 90%;
 }
+.lowerPro {
+    flex: 0 0 50%;
+}
+
+iframe {
+    height: 100vh;
+    width: 100%;
+}
+
 
 
 @media screen and (max-width: 950px) {
